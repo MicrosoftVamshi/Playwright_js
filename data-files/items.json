@@ -1,0 +1,14 @@
+[
+  {
+    "item": "Samsung galaxy s6",
+    "expectedAvailable": true
+  },
+  {
+    "item": "Nokia lumia 1520",
+    "expectedAvailable": true
+  },
+  {
+    "item": "Imaginary Phone XYZ",
+    "expectedAvailable": false
+  }
+]
