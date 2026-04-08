@@ -25,6 +25,7 @@ npm install
 npx playwright install
 npx playwright test --config=playwright.config.js --workers=1
 npx playwright show-report
+```
 
 ---
 ## Data Rotation Strategy
@@ -127,7 +128,7 @@ Playwright_js/
     ├── cart-delete.spec.js
     └── e2e.spec.js
 
-
+```
 ---
 
 ## Known Limitations
