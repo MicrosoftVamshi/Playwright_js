@@ -18,6 +18,27 @@ It supports **data‑driven testing (Excel / CSV / JSON rotation)**, **Playwrigh
 
 ---
 
+## Quick Start (TL;DR)
+
+```powershell
+npm install
+npx playwright install
+npx playwright test --config=playwright.config.js --workers=1
+npx playwright show-report
+
+---
+## Data Rotation Strategy
+
+The same test logic is executed against multiple data formats:
+
+- Test data is written into **Excel, CSV, and JSON**
+- Each format is read sequentially during test execution
+- The framework does not duplicate tests per format
+- Data-type normalization is applied where required (CSV booleans)
+
+This validates framework flexibility and true data‑driven design.
+---
+
 ## Requirements Coverage (A–G)
 
 ### A) Page classes for all menu pages
@@ -105,3 +126,12 @@ Playwright_js/
     ├── cart-add.spec.js
     ├── cart-delete.spec.js
     └── e2e.spec.js
+
+
+---
+
+## Known Limitations
+
+- Demoblaze does not provide a search box; item search is implemented by scanning product listings.
+- Parallel execution is intentionally avoided due to shared demo site limitations.
+- Alerts and modals are handled defensively due to UI timing variability.
