@@ -27,8 +27,9 @@ npx playwright test --config=playwright.config.js --workers=1
 npx playwright show-report
 ```
 
-## Allure Report
 ---
+## Allure Report
+
 ```powershell
 npx playwright test
 allure generate ./allure-results --clean
