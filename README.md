@@ -32,8 +32,8 @@ npx playwright show-report
 
 ```powershell
 npx playwright test
-allure generate ./allure-results --clean
-allure open
+npx allure generate ./allure-results -o ./allure-report --clean
+npx allure open ./allure-report
 ```
 ---
 ## Data Rotation Strategy
